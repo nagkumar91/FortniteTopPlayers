@@ -28,7 +28,7 @@ def lambda_handler(event, context):
     for row in data:
         info = row[1].split("\n")
         top_players.append(info[0])
-    return top_players
+    return list(set(top_players))
 
 
 if __name__ == "__main__":  # pragma: no cover
