@@ -24,7 +24,7 @@ invoke:
 		python app.py
 
 lint:
-		pylint --disable=W *.py
+		pylint --disable=W app.py
 
 coverage:
 		coverage run --source=. -m unittest discover -s .
